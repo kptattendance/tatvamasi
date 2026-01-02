@@ -1,2 +1,42 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+:root {
+  --color-primary: #1f7a63;   /* Trust green */
+  --color-accent: #f4c430;    /* Warm yellow */
+  --color-soft: #f9faf7;      /* Soft background */
+  --color-text: #1f2937;      /* Gray-800 */
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-soft);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* =========================
+   Reusable Utility Classes
+   ========================= */
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-soft {
+  background-color: var(--color-soft);
+}
